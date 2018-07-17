@@ -1,0 +1,12 @@
+name: Knockback
+version: ${project.version}
+main: nl.dizmizzer.knockback.Knockback
+prefix: Knockback
+authors: [DizMizzer]
+description: Knockback minigame
+website: http://dizmizzer.nl/
+
+commands:
+    kb:
+        usage: /<command>
+        description: All KB commands!
