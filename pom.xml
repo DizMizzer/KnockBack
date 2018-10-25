@@ -41,7 +41,7 @@
                         </goals>
                         <configuration>
                             <outputFile>
-                                D:/Servers/GameCoreTestServer/plugins/${project.artifactId}-${project.version}.jar
+                                D:\Servers\Minecraft\1.8Development\plugins\${project.artifactId}-${project.version}.jar
                             </outputFile>
                             <minimizeJar>true</minimizeJar>
                         </configuration>

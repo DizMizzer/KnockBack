@@ -8,6 +8,7 @@ import nl.dizmizzer.knockback.manager.ConfigManager;
 import nl.dizmizzer.knockback.manager.StringManager;
 import nl.dizmizzer.knockback.utils.InventoryStringDeSerializer;
 import org.bukkit.GameMode;
+import org.bukkit.block.Skull;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerMoveEvent;
@@ -68,8 +69,6 @@ public class PlayerMoveListener implements Listener {
         if (GamePlayer.getGamePlayer(e.getPlayer()).getGame() == null) return;
         if (e.getCause() == PlayerTeleportEvent.TeleportCause.PLUGIN) return;
         GamePlayer gamePlayer = GamePlayer.getGamePlayer(e.getPlayer());
-
-
         if (e.getTo().getX() == gamePlayer.getGame().getSpawn().getX() &&
                 e.getTo().getY() == gamePlayer.getGame().getSpawn().getY() &&
                 e.getTo().getZ() == gamePlayer.getGame().getSpawn().getZ() &&

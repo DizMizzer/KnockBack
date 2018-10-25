@@ -64,9 +64,7 @@ public class ConfigManager {
     }
 
     public Location getSpawn() {
-        return new Location(Bukkit.getWorld(configuration.getString("spawn.world")),
-                configuration.getDouble("spawn.x"),
-                configuration.getDouble("spawn.y"),
-                configuration.getDouble("spawn.z"));
+        List<Object> spawn = (List<Object>) configuration.getList("spawn");
+        return new Location(Bukkit.getWorld(spawn.get(0).toString()), (Integer) spawn.get(1),(Integer)  spawn.get(2),(Integer)  spawn.get(3));
     }
 }
